@@ -31,10 +31,10 @@ We need to install babel and babel-loader to transpile the Javascript files
 Create webpack config file and setup as following
 
 ```
-	    const path = require('path');
-		const HtmlWebpackPlugin = require('html-webpack-plugin');
+	const path = require('path');
+	const HtmlWebpackPlugin = require('html-webpack-plugin');
 
-		module.exports = {
+	module.exports = {
 			entry: './src/index.js',
 			output: {
 				path: path.join(__dirname,'/dist'),
@@ -58,7 +58,7 @@ Create webpack config file and setup as following
 			    template: './src/index.html'
 			  })
 			]
-		}
+	}
 ```
 
 Create babel presets file with .babelrc extension and add following code
@@ -72,7 +72,7 @@ Create babel presets file with .babelrc extension and add following code
 Creat index.html file and following code
 
 ```
-		<!DOCTYPE html>
+    <!DOCTYPE html>
 		<html lang="en">
 		<head>
 			<meta charset="utf-8">
@@ -85,17 +85,17 @@ Creat index.html file and following code
 		 
 			<script src="../dist/index_bundle.js"></script>  
 		</body>
-		</html>
+	</html>		
 ```
 
 Create index.js file and add the code as following
 
 ```
-		import React from 'react'
-		import ReactDOM from 'react-dom'
-		import App from './components/App'
+	import React from 'react'
+	import ReactDOM from 'react-dom'
+	import App from './components/App'
 
-		ReactDOM.render(<App />, document.getElementById('app'));
+	ReactDOM.render(<App />, document.getElementById('app'));
 ```
 
 We need to create App component to render the content 
