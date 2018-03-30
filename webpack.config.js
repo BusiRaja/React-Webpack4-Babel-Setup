@@ -21,7 +21,6 @@ module.exports = {
 	plugins: [
 	  new HtmlWebpackPlugin({
 	    title: 'React Webpack Babel Setup', 
-	    
 	    template: './src/index.html'
 	  })
 	]
