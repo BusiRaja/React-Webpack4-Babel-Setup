@@ -5,8 +5,8 @@
   "main": "index.js",
   "scripts": {
     "start": "webpack-dev-server --mode development --open --hot",
-    "dist": "webpack --mode production",
-    "deploy": "npm run dist && gh-pages -d dist"
+    "build": "webpack --mode production",
+    "deploy": "npm run build && gh-pages -d dist"
   },
   "author": "Rajashekar Reddy Busi Reddy",
   "license": "MIT",

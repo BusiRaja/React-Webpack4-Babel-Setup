@@ -123,7 +123,7 @@ We need to add following scripts in package json file to start the webpack serve
 
 ```
 	"start": "webpack-dev-server --mode development --open --hot",
-	"dist": "webpack --mode production"
+	"build": "webpack --mode production"
 ```
 
 ## Serve on localhost:8080
@@ -135,7 +135,7 @@ We need to add following scripts in package json file to start the webpack serve
 ## Build for production
 
 ```
-	npm run dist
+	npm run build
 ```
 
 
